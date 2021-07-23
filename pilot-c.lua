@@ -46,7 +46,7 @@ function NewBlip()
 	end
         if IsControlJustPressed(1, 73) then
             RemoveBlip(blip)
-				drawnotifcolor ("Bring back the plane!", 25)
+				drawnotifcolor ("Bring back the plane! Drug run over.", 25)
 				--drawnotifcolor ("Върни камиона и си вземи точките.", 25)
             StopService()
         end
@@ -57,7 +57,7 @@ function NotifChoise()
     drawnotifcolor ("Press ~g~E~w~ or L1 for more drug deliveries.\n~r~X~w~ to get out the game!", 140)
 	--drawnotifcolor ("Натисни ~g~E~w~ за нова локация.\n~r~X~w~ за да си спреш!", 140)
 
-    local timer = 1200
+    local timer = 1500
 	while timer >= 1 do
 		Citizen.Wait(10)
 		timer = timer - 1
@@ -68,7 +68,7 @@ function NotifChoise()
         end
 
 		if IsControlJustPressed(1, 73) then
-            drawnotifcolor ("Bring back the plane!", 25)
+            drawnotifcolor ("Fine then! Bring back the plane!", 25)
 			--drawnotifcolor ("Върни камиона и си вземи точките.", 25)
             StopService()
 
@@ -76,7 +76,7 @@ function NotifChoise()
         end
 
         if timer == 1 then
-            drawnotifcolor ("Bring back the plane!", 25)
+            drawnotifcolor ("They left the drop area! Bring back the drugs, dumbass.", 25)
 			--drawnotifcolor ("Върни камиона и си вземи точките.", 25)
             StopService()
             break
