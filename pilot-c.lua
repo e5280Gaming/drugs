@@ -147,7 +147,7 @@ function StopService()
 		Citizen.Wait(0)
 		local coords  = GetEntityCoords(ped)
         local distance = GetDistanceBetweenCoords(coordsEndService, coords, true)
-		DrawMarker(1, -1650.99, -2757.1, 13.94, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.5, 1.5, 1.5, 255, 0, 0, 100, false, true, 2, false, false, false, false)
+		DrawMarker(1, 1636.44, 3238.06, 42.02, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.5, 1.5, 1.5, 255, 0, 0, 100, false, true, 2, false, false, false, false)
         if distance <= 5 then
             DisplayHelpTextThisFrame("press_ranger_ha420")
             if IsControlPressed(1, 38) then
